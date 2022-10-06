@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
+from config import _user_email, _user_password, _base_site, _captcha_page, _login_page
+
 driver = webdriver.Chrome()
 
 

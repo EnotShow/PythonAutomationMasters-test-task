@@ -13,9 +13,6 @@ async def on_startup(_):
     while True:
         time.sleep(5)
         post_title, post_link = get_post()
-        print(current_post)
-        print(post_title)
-        print(current_post == post_title)
         if current_post == post_title:
             await send_post(post_title, post_link)
 
